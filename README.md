@@ -1,14 +1,14 @@
-## MnistSimpleCNN
+# MnistSimpleCNN
 
 This is a fork of the MnistSimpleCNN repository for testing of new data reduction methods on deep learning methods.
 
 This repository is implementation of "An Ensemble of Simple Convolutional Neural Network Models for MNIST Digit Recognition".
 
-Paper url is https://arxiv.org/abs/2008.10400.
+Paper url is <https://arxiv.org/abs/2008.10400>.
 
 In paper, we propose simple models classifying MNIST called M3, M5, M7 following kernel size.
 
-### Train
+## Train
 
 ```bash
 python3 train.py --seed=0 --trial=10 --kernel_size=5 --gpu=0 --logdir=modelM5
@@ -28,7 +28,7 @@ gpu : gpu number. You can use only one gpu during training in this code, but can
 
 logdir : save directory address name. It makes a sub-directory using that name at logs directory.
 
-### Test
+## Test
 
 ```bash
 python3 test.py  --seed=0 --trial=10 --kernel_size=5 --logdir=modelM5
@@ -36,7 +36,7 @@ python3 test.py  --seed=0 --trial=10 --kernel_size=5 --logdir=modelM5
 
 test.py loads model saving files and make wrong image number list for each seed.
 
-### Ensemble
+## Ensemble
 
 ```bash
 python3 homo_ensemble.py --kernel_size=5
@@ -46,4 +46,4 @@ homo_ensemble.py loads wrong image number list files of same model saving during
 
 ## License
 
-Please refer to original authors work at: https://github.com/ansh941/MnistSimpleCNN
+Please refer to original authors work at: <https://github.com/ansh941/MnistSimpleCNN>.
