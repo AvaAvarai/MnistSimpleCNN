@@ -20,7 +20,7 @@ class MnistDataset(torch.utils.data.Dataset):
             ys = np.array(np.frombuffer(f.read(), np.uint8, offset=8))
             f.close()
         xs = np.reshape(xs, (-1, 28, 28, 1)).astype(np.float32)
-        ys = ys.astype(np.int)
+        ys = ys.astype(np.int64)
         self.x_data = xs
         self.y_data = ys
         self.transform = transform

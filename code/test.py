@@ -26,7 +26,6 @@ def run(p_seed=0, p_kernel_size=5, p_logdir="temp"):
     device = torch.device("cuda" if use_cuda else "cpu")
     if use_cuda == False:
         print("WARNING: CPU will be used for training.")
-        exit(0)
 
     # data loader -----------------------------------------------------------------#
     test_dataset = MnistDataset(training=False, transform=None)
