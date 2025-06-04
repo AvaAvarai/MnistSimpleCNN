@@ -9,7 +9,7 @@ This paper proposed models classifying MNIST called M3, M5, M7. The paper is at:
 ## Train
 
 ```bash
-python train.py --seed=0 --trial=10 --kernel_size=5 --gpu=0 --logdir=modelM5
+python train.py --seed=0 --trial=10 --kernel_size=5 --gpu=0 --logdir=modelM5 --epochs=150
 ```
 
 Parameters:
@@ -25,6 +25,8 @@ kernel_size : kernel size of model. You can select the model following this para
 gpu : gpu number. You can use only one gpu during training in this code, but can select gpu when you training.
 
 logdir : save directory address name. It makes a sub-directory using that name at logs directory.
+
+epochs : number of training epochs (default: 150)
 
 ## Test
 
