@@ -1,5 +1,7 @@
 ## MnistSimpleCNN
 
+This is a fork of the MnistSimpleCNN repository for testing of new data reduction methods on deep learning methods.
+
 This repository is implementation of "An Ensemble of Simple Convolutional Neural Network Models for MNIST Digit Recognition".
 
 Paper url is https://arxiv.org/abs/2008.10400.
@@ -41,3 +43,7 @@ python3 homo_ensemble.py --kernel_size=5
 ```
 
 homo_ensemble.py loads wrong image number list files of same model saving during executing test.py. And then calculate the accuracy of ensemble model through majority voting.
+
+## License
+
+Please refer to original authors work at: https://github.com/ansh941/MnistSimpleCNN
